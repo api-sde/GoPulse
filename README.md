@@ -1,2 +1,10 @@
 # GoPulse
- Go chat with a pulse
+
+# Go chat with a pulse
+
+go run main.go
+
+# or build the package with:
+
+go build -o pulse
+./pulse
