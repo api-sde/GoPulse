@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 
@@ -59,6 +60,7 @@ var upgrader = &websocket.Upgrader{
 func (room *room) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 
 	// upgrade the connection to use WS
+	fmt.Println("upgrade..")
 	socket, err := upgrader.Upgrade(w, req, nil)
 
 	if err != nil {

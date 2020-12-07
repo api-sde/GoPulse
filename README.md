@@ -8,3 +8,8 @@ go run main.go
 
 go build -o pulse
 ./pulse
+
+# module:
+go mod init github.com/apiBdx/GoPulse
+go build
+./GoPulse
