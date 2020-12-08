@@ -13,3 +13,5 @@ go build -o pulse
 go mod init github.com/apiBdx/GoPulse
 go build
 ./GoPulse
+
+./GoPulse -addr=":3000"
